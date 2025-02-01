@@ -1,0 +1,32 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+        { "src": "/api/(.*)", "dest": "index.js" },
+      {
+        "src": "/api",           
+        "dest": "index.js"
+      },
+      {
+        "src": "/create-student/(.*)",      
+        "dest": "index.js"
+      },
+      {
+        "src": "/read-student/(.*)",      
+        "dest": "index.js"
+      },
+      {
+        "src": "/update-student",           
+        "dest": "index.js"
+      },
+      {
+        "src": "/delete-student/(.*)",      
+        "dest": "index.js"
+      }
+    ]
+  }
