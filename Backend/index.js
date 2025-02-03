@@ -17,11 +17,13 @@ app.use('/', studentRoutes)
 
 app.get('/api', (req, res) => res.send('Route found! Alx'));
 
+let port = process.env.PORT || 3000;
+
 // connect to the database through mongoose 
 mongoose.connect(process.env.MONGO_URL)
     .then(() => {
         // listen port 
-        app.listen(3000, () => {
+        app.listen(port, () => {
             console.log("Server is working and db connected")
         })
     })
