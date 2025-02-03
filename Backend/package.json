@@ -2,7 +2,7 @@
   "name": "backend-crash-course",
   "version": "1.0.0",
   "description": "this is course for begginners",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node index.js",
